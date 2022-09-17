@@ -1,9 +1,9 @@
 //Selectores
-let palabra = ["ALURA","ORACLE","ONE", "JAVASCRIPT", "HTML","CSS"];
+let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT","HTML", "CSS"];
 let tablero = document.getElementById("forca").getContext("2d");
 let palabraSecreta = "";
 
-//Palabra secreta
+//PalabraSecreta
 
 function escojerPalabraSecreta(){
     let palabra = palabras[Math.floor(Math.random() * palabras.length)]
@@ -11,8 +11,9 @@ function escojerPalabraSecreta(){
     console.log(palabraSecreta)
 }
 
-//Iniciar juego
 
+
+//Iniciar juego
 function iniciarJuego(){
     document.getElementById("iniciar-juego").style.display = "none";
 
