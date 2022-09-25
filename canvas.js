@@ -1,4 +1,4 @@
-function dibujarCamvas(){
+function dibujarCanvas(){
     tablero.lineWidth = 8;
     tablero.lineCap = "round";
     tablero.lineJoin = "round";
@@ -29,4 +29,24 @@ function dibujarLinea(){
 
     tablero.stroke();
     tablero.closePath();
+}
+function escribirLetraCorrecta(index){
+    tablero.font = 'bold 52px Inter';
+    tablero.lineWidth = 6;
+    tablero.lineCap = "round";
+    tablero.lineJoin = "round"
+    tablero.fillStyle = "#F3F5F6";
+
+    let anchura = 600/palabraSecreta.length
+    tablero.FillText(palabraSecreta[index],555+(anchura*index),600)
+    tablero.stroke()
+}
+function escribirLetraIncorrecta(letra, erresLeft){
+    tablero.font = 'bold 70px Inter';
+    tablero.lineWidth = 6;
+    tablero.lineCap = "round";
+    tablero.lineJoin = "round"
+    tablero.fillStyle = "#F3F5F6";
+    tablero.FillText(letra, 505+(70*(10-erresLeft)), 680,70)
+
 }

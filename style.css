@@ -59,3 +59,13 @@ body{
     position: absolute;
     left:42rem;
    }
+   footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+   }
+   footer span a{
+    text-decoration-line: none;
+    text-decoration: #0A3871;
+    color: #5c7797;
+   }
